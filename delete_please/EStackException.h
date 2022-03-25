@@ -11,7 +11,6 @@ public:
 		mesg_ = new char[strlen(mesg) + 1];
 
 		strcpy(mesg_, mesg);   // сохранение сообщения об ошибке
-		cout << what();
 	}
 	EStackException(const EStackException& obj)
 	{
@@ -21,7 +20,6 @@ public:
 	}
 	~EStackException()
 	{
-		cout << "lol";
 		delete[] mesg_;
 	}
 	const char* what() const

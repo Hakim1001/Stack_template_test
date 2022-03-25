@@ -9,7 +9,7 @@ private:
   int count;                     // Вершина стека - количество элементов типа T в стеке
   struct Node
   {
-    const T stack;           //Значения 
+    const T stack;               //Значения 
     Node *next = nullptr;
     Node *prev = nullptr;
   };
@@ -55,29 +55,30 @@ void tmp_stack<T>::push(const T value)   //Помещение объекта в стек;
     count++;
 }
 template <class T>
- const T tmp_stack<T>::pop()           //Извлечение объекта из стека;
+ const T tmp_stack<T>::pop()                   //Извлечение объекта из стека;
 {
-    if (tail== nullptr || count==0)    //Если стек пуст,возвращаем исключение
-    {
-        cout << "warning1";
-        EStackEmpty();
-        cout << "warning";
-    }
-    else
-    {
-       
-        const T value = tail->stack; 
-        Node* tmp = tail;
-        tail = tail->prev;
-        if (tail) 
-        {
-            tail->next = nullptr;
-        }
-        delete tmp;               
-        count--; 
-       
-        return value;                 
-    }
+  
+         if (tail == nullptr || count == 0)    //Если стек пуст,возвращаем исключение
+         {
+             throw EStackEmpty();
+         }
+         else
+         {
+
+             const T value = tail->stack;
+             Node* tmp = tail;
+             tail = tail->prev;
+             if (tail)
+             {
+                 tail->next = nullptr;
+             }
+             delete tmp;
+             count--;
+
+             return value;
+         }
+    
+   
 }
 
 template <class T>

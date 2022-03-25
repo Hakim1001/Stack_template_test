@@ -15,6 +15,5 @@ public:
  }
  ~EStackEmpty() 
  {
-     cout << " DestructorEStackEmpty";
  }
 };
