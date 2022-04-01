@@ -148,14 +148,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="delete_please.cpp" />
+    <ClCompile Include="Stack.cpp" />
     <ClCompile Include="EStackEmpty.cpp" />
     <ClCompile Include="EStackException.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="PersonKeeper.cpp" />
     <ClCompile Include="tmp_stack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EStackEmpty.h" />
     <ClInclude Include="EStackException.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="PersonKeeper.h" />
     <ClInclude Include="tmp_stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
