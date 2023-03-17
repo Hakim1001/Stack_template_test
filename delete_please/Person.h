@@ -1,5 +1,10 @@
 #pragma once
+#define _CRT_SECURE_NO_WARNINGS 
 #include <string>
+#include <iostream>    
+#include "EStackException.h"
+#include "EStackEmpty.h"
+using namespace std;
 class Person
 {
 private:
@@ -8,12 +13,15 @@ private:
 	std::string patronymic;
 public:
 	Person();
-	Person(const Person&);
+	Person(string last_name, string first_name, string patronymic);
+	Person(string);
+	//Person(const Person&);
 	const std::string& getName() const { return name; }
 	const std::string& getSecondname() const { return secondname; }
 	const std::string& getPatronymic() const { return patronymic; }
-	void setname(const std::string&);
-	void secondname(const std::string&);
-	void patronymic(const std::string&);
+	void Setname(const std::string& n) { name = n; }
+	void Setsecondname(const std::string& s) {  secondname=s; }
+	void Setpatronymic(const std::string& p) {  patronymic=p; }
+
 };
 

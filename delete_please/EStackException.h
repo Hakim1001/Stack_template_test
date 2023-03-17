@@ -10,7 +10,7 @@ public:
 	{
 		mesg_ = new char[strlen(mesg) + 1];
 
-		strcpy(mesg_, mesg);   // сохранение сообщения об ошибке
+		strcpy(mesg_, mesg);                                               // сохранение сообщения об ошибке
 	}
 	EStackException(const EStackException& obj)
 	{

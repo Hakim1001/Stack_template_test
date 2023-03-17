@@ -9,7 +9,7 @@ public:
  EStackEmpty() : EStackException("A stack is empty.")            //Инициализация базового класса с сообщением об ошибке
 	{
 	}
- EStackEmpty(const EStackEmpty& obj): EStackException(obj) // инициализируем базовый класс переденным обьектом
+ EStackEmpty(const EStackEmpty& obj): EStackException(obj)        // инициализируем базовый класс переденным обьектом
  {
 
  }

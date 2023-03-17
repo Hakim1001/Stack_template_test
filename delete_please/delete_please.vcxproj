@@ -148,6 +148,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Check_File.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="EStackEmpty.cpp" />
     <ClCompile Include="EStackException.cpp" />
@@ -156,6 +157,7 @@
     <ClCompile Include="tmp_stack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Check_File.h" />
     <ClInclude Include="EStackEmpty.h" />
     <ClInclude Include="EStackException.h" />
     <ClInclude Include="Person.h" />
